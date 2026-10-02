@@ -279,7 +279,10 @@ FR-017 se conserva para no perder el identificador histórico, pero su estado es
 | ID | Categoría y atributo | Requisito no funcional | Ámbito (Global/Local) | UR/FR relacionados | Método de comprobación | Estado |
 | --- | --- | --- | --- | --- | --- | --- |
 | NFR-07 |NFR-Q (Eficiencia; Escalabilidad; Mantenibilidad) |La plataforma mantendrá los objetivos de capacidad y rendimiento definidos para la primera versión sin intervención manual del personal de la organización.| G | -  | Prueba de carga automatizada con 100 usuarios concurrentes y 10 operaciones/s durante 30 min; comprobar mediante registros de monitorización, ausencia de intervención manual. | - |
-
+|NFR-08 |NFR-Q (Seguridad, Integridad)|La plataforma no debe presentar vulnerabilidades que puedan ser explotadas por terceros para robar datos de los usuarios. | G | - | Búsqueda intensiva de fugas de datos cuando se quiera acceder a estos mismos. | - |
+|NFR-09|NFR-I (Interfaz de usuario)|La plataforma debe de mandar alertas críticas en un periodo menor de 1 minutos.|G|FR-051|Introducción repetida de datos críticos desde varios usuarios cuando el sistema está saturado.| - |
+| NFR-10 | NFR-I | Los avisos por datos críticos deben presentarse con un fondo rojo, ocupando la mayoría de la pantalla y solo pueden ser eliminadas cinco segundos después de ser emitidas. | G | - | Prueba con 50 alertas a distintos usuarios dependiendo de en que punto están en la interfaz. | - |
+| --- | --- | --- | --- | --- | --- | --- |
 Categorías y atributos: 
 1) Requisitos de calidad (NFR-Q): Rendimiento, Usabilidad, Seguridad, Fiabilidad, Disponibilidad, Modificabilidad, Portabilidad, Eficiencia, Escalabilidad, Verificabilidad / Testabilidad, Robustez, Seguridad funcional (safety), Integridad, Reusabilidad, Instalabilidad.
 2) Restricciones (NFR-R): Tecnología y entorno, Hardware, Regulaciones y estándares, Compatibilidad, Interfaces existentes, Restricciones presupuestarias y de gestión.
